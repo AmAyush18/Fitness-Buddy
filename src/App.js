@@ -5,18 +5,18 @@
 
  import './App.css';
 
- import ExcerciseDetails from './pages/ExcerciseDetails';
+ import ExerciseDetails from './pages/ExerciseDetails';
  import Home from './pages/Home';
  import Navbar from './components/Navbar';
  import Footer from './components/Footer';
 
  const App = () => {
    return (
-     <Box width='400px' sx={{ width: { xl: '1488px'}}} m='auto'>
+     <Box width='400px' sx={{ width: { xl: '1488px'}, overflowX: 'hidden'}} m='auto'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/excercise/:id' element={<ExcerciseDetails />} />
+        <Route path='/exercise/:id' element={<ExerciseDetails />} />
       </Routes>
       <Footer />
      </Box>

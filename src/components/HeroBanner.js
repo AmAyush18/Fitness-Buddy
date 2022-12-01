@@ -3,7 +3,7 @@ import { Box, Stack, Typography, Button } from "@mui/material";
 
 import HeroBannerImage from "../assets/images/banner.jpg";
 
-const primary = '#58ad87'
+const primary = "#58ad87";
 
 const HeroBanner = () => {
   return (
@@ -24,14 +24,30 @@ const HeroBanner = () => {
         mb="23px"
         mt="30px"
       >
-        Sweat is new Smile <br /> Stay Fit
+        Sweat is new Smile <br /> No Cheat Days
       </Typography>
       <Typography fontSize="22px" lineHeight="35px" mb={4}>
-        Follow along the most effective excercises
+        Follow along the most effective exercises
       </Typography>
-      <Button variant="contained" color="error" href="#excercises" sx={{ backgroundColor: `${primary}`, padding: '10px'}}>
-        Explore Fitness
-      </Button>
+      <Stack>
+        <a
+          href="#exercises"
+          style={{
+            marginTop: "45px",
+            textDecoration: "none",
+            width: "200px",
+            textAlign: "center",
+            background: `${primary}`,
+            padding: "14px",
+            fontSize: "22px",
+            textTransform: "none",
+            color: "white",
+            borderRadius: "4px",
+          }}
+        >
+          Explore Fitness
+        </a>
+      </Stack>
       <Typography
         fontWeight={600}
         color={primary}
@@ -41,9 +57,9 @@ const HeroBanner = () => {
         }}
         fontSize="200px"
       >
-        Excercise
+        Exercise
       </Typography>
-      <img src={HeroBannerImage} alt="banner" className="hero-banner-img" />
+      <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
     </Box>
   );
 };

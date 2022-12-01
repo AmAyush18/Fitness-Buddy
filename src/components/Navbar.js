@@ -19,10 +19,10 @@ const Navbar = () => {
                 color: `${secondary}`,
                 borderBottom: `3px solid ${primary}`
             }}> Home </Link>
-            <a href='#excercises' style={{
+            <a href='#exercises' style={{
                 textDecoration: 'none',
                 color: `${secondary}`
-            }}>Excercises</a> 
+            }}>Exercises</a> 
         </Stack>  
 
     </Stack>
