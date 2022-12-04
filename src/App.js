@@ -12,7 +12,7 @@
 
  const App = () => {
    return (
-     <Box width='400px' sx={{ width: { xl: '1488px'}, overflowX: 'hidden'}} m='auto'>
+     <Box width='400px' sx={{ width: { xl: '1488px'}, overflowX: 'hidden' }} m='auto'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
